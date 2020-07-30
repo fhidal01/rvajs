@@ -1,0 +1,21 @@
+<div class="tab-container">
+  <div>
+    <span
+      class="upcomming-toggle"
+      [class.active]="tab.upcoming.selected"
+      (click)="toggleEvents('upcoming')"
+      >Upcoming</span
+    >
+    <span
+      class="past-toggle"
+      [class.active]="tab.past.selected"
+      (click)="toggleEvents('past')"
+      >Archives</span
+    >
+  </div>
+</div>
+<div class="events-container">
+  <div class="event-card" *ngFor="let event of tab[currentlySelected].data">
+    <app-event [event]="event"></app-event>
+  </div>
+</div>

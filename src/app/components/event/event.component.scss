@@ -1,0 +1,45 @@
+.when {
+  color: #63b1bc;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.where {
+  color: grey;
+  margin-bottom: 25px;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+}
+
+.context {
+  clear: both;
+}
+
+.footer {
+  .attendees {
+    float: left;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+  .button {
+    float: right;
+    padding: 8px 15px;
+    color: #63b1bc;
+    border: 1px solid #63b1bc;
+    border-radius: 3px;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+      background-color: #63b1bc;
+    }
+  }
+}

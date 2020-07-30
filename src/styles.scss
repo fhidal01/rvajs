@@ -1,0 +1,64 @@
+@import "./styles-rvaconf.scss";
+
+@mixin avatar {
+  border-radius: 50%;
+  border: 3px solid #63b1bc;
+  background-color: #c5c5c5;
+  margin: auto;
+  margin-bottom: 15px;
+
+  &.error {
+    padding: 10px;
+  }
+}
+
+.people-avatar {
+  height: 150px;
+  width: 150px;
+  @include avatar();
+}
+
+.people-avatar-sm {
+  height: 100px;
+  width: 100px;
+  @include avatar();
+}
+
+.separator {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  width: 250px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.white-bk {
+  background-color: #fff;
+}
+
+.center {
+  text-align: center;
+}
+
+.grow {
+  &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.05);
+  }
+}
+
+.simple-link {
+  text-decoration: none;
+  color: inherit;
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
